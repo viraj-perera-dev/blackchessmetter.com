@@ -1,7 +1,7 @@
 {
   "name": "chess",
   "version": "0.1.0",
-  "homepage": "Chess",
+  "homepage": "https://blackchessmatter.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

@@ -1,0 +1,38 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Serve index.html for all routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
+# Set caching headers for static assets
+<IfModule mod_expires.c>
+    ExpiresActive on
+
+    # Cache images and fonts for one year
+    ExpiresByType image/* "access plus 1 year"
+    ExpiresByType font/* "access plus 1 year"
+
+    # Cache CSS and JavaScript for one month
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Set CORS headers for web fonts
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Canonicalization (Add Canonical URLs)
+<IfModule mod_rewrite.c>
+    # Redirect error pages to /error
+    ErrorDocument 400 /not-found.html
+    ErrorDocument 401 /not-found.html
+    ErrorDocument 403 /not-found.html
+    ErrorDocument 404 /not-found.html
+    ErrorDocument 500 /not-found.html
+</IfModule>
