@@ -10,7 +10,7 @@ const App: FC = () => {
       <Chessengine>
         <div className="mx-5 mb-5 shrink grow-[2]">
           <div className='flex justify-center my-6'>
-            <p className='text-white font-semibold text-2xl uppercase font-roboto-slab'>black chess metter!</p>
+            <p className='text-black font-semibold text-2xl uppercase font-roboto-slab'>black chess metter!</p>
           </div>
           <Chessboard />
         </div>

@@ -20,11 +20,11 @@ const AiLevel: FC = () => {
       value={internalLevel}
       style={{ textAlign: 'center', textAlignLast: 'center' }}
     >
-      <option className='bg-neutral-500 ' value="0">Easy</option>
-      <option className='bg-neutral-500 ' value="1">Beginner</option>
-      <option className='bg-neutral-500 ' value="2">Intermediate</option>
-      <option className='bg-neutral-500 ' value="3">Advanced</option>
-      <option value="4" className="bg-neutral-500 rounded-b-3xl">
+      <option className='bg-neutral-100 ' value="0">Easy</option>
+      <option className='bg-neutral-100 ' value="1">Beginner</option>
+      <option className='bg-neutral-100 ' value="2">Intermediate</option>
+      <option className='bg-neutral-100 ' value="3">Advanced</option>
+      <option value="4" className="bg-neutral-100 rounded-b-3xl">
         Experienced
       </option>
     </select>

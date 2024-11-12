@@ -10,7 +10,7 @@ const Settings: FC = () => {
     <Fragment>
       <AiLevel />
       <PlayButton vsAi />
-      <div className="my-4 px-4 text-white">
+      <div className="my-4 px-4 text-black">
         <p className="italic text-xl font-roboto-slab">
         "Si dice che gli scacchi, come tutti i grandi giochi, abbiano avuto una nascita leggendaria. Un giorno, il geniale rivoluzionario degli scacchi, Viraj Perera, mentre sorseggiava un caffè e rifletteva sulla vita, si chiese: 'Perché non iniziare una partita con il pezzo nero?' La risposta, ovviamente, arrivò come una folgorazione: il nero rappresenta il mistero, l'intrigo e una strategia astuta che mette subito alla prova il giocatore. Era chiaro, il primo movimento doveva essere audace!"
         </p>

@@ -35,12 +35,12 @@ const ModalFinishGame: FC = () => {
   if (!open) return null;
   let winner: configObj['turn'] = !data!.checkMate
     ? data!.turn
-    : data!.turn === 'black'
+    : data!.turn === 'white'
     ? 'white'
     : 'black';
-  const title = `${winner} win`;
-  const body = `${winner} win the game in ${data?.fullMove} moves`;
-  return <Modal onCloseHandler={onCloseHandler} body={body} title={title} />;
+    const title = `${winner.charAt(0).toUpperCase() + winner.slice(1)} wins`;
+    const body = `${winner.charAt(0).toUpperCase() + winner.slice(1)} wins the game in ${data?.fullMove} moves`;
+        return <Modal onCloseHandler={onCloseHandler} body={body} title={title} />;
 };
 
 export default memo(ModalFinishGame);

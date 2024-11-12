@@ -19,7 +19,7 @@
 
 @layer utilities {
   .base {
-    @apply w-full rounded-lg py-2 px-4 font-semibold text-white shadow-md shadow-sky-400/50 drop-shadow-lg;
+    @apply w-full rounded-lg py-2 px-4 font-semibold text-black shadow-md shadow-sky-400/50 drop-shadow-lg;
     background: linear-gradient(145deg, #9e9e9e, #c5c5c5); /* Gradient for metal effect */
     border: 2px solid #8a8a8a; /* Border for a more defined look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle inner shadow for metallic shine */
@@ -74,17 +74,19 @@ body {
   height: 100%;
   overflow-x: hidden;
   background-color: #4b443c;
-  background-image: linear-gradient(
-      45deg,
-      transparent 20%,
-      black 25%,
-      transparent 25%
-    ),
-    linear-gradient(-45deg, transparent 20%, black 21%, transparent 21%),
-    linear-gradient(-45deg, transparent 75%, black 76%, transparent 0);
-  background-size: 90px 90px, 90px 90px;
+  background-image: url('./images/age.png');
+  background-size: 100%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.glassmorphism{
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  }

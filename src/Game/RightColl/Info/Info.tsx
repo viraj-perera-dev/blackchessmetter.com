@@ -22,7 +22,7 @@ const Info: FC = () => {
     <>
       <Fragment>
         <div className='flex justify-center h-[2rem]'>
-          <span className="text-white font-semibold text-xl uppercase font-roboto-slab">{data.turn.toLowerCase() !== 'black' && ('È il tuo turno!')}</span>
+          <span className="text-black font-semibold text-xl uppercase font-roboto-slab">{data.turn.toLowerCase() !== 'black' && ('È il tuo turno!')}</span>
         </div>
         <CustomInfo data={data} />
       </Fragment>

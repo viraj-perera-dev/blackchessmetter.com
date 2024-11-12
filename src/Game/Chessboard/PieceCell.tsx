@@ -63,7 +63,7 @@ const PieceCell: FC<input> = ({
           pieceId === pieceId.toUpperCase()
             ? 'text-neutral-900 piece-border'
             : 'text-white piece-border-black',
-          'h-5/6 cell-content'
+          'h-5/6  cell-content'
         )}
       />
     </Cell>
